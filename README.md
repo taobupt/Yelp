@@ -1,38 +1,13 @@
-<<<<<<< HEAD
-### Basic Yelp client
-
-This is a headless example of how to implement an OAuth 1.0a Yelp API client. The Yelp API provides an application token that allows applications to make unauthenticated requests to their search API.
-
-### Next steps
-
-- Check out `BusinessesViewController.swift` to see how to use the `Business` model.
-
-### Sample request
-
-**Basic search with query**
-
-```
-Business.searchWithTerm("Thai", completion: { (businesses: [Business]!, error: NSError!) -> Void in
-    self.businesses = businesses
-    
-    for business in businesses {
-        print(business.name!)
-        print(business.address!)
-    }
-})
-```
-
-**Advanced search with categories, sort, and deal filters**
-
-```
-Business.searchWithTerm("Restaurants", sort: .Distance, categories: ["asianfusion", "burgers"], deals: true) { (businesses: [Business]!, error: NSError!) -> Void in
-
-    for business in businesses {
-        print(business.name!)
-        print(business.address!)
-    }
-}
-```
-=======
 # Yelp
->>>>>>> 2a3799b8de240cdd77a2b4294c0a294f1322a5b5
+
+This is the codepath third assignment
+
+Completed:
+- [x] Required: Table rows for search results should be dynamic height according to the content height.
+- [x] Required: Custom cells should have the proper Auto Layout constraints.
+- [x] Required: Search bar should be in the navigation bar (doesn't have to expand to show location like the real Yelp app does).
+- [x] Optional: Infinite scroll for restaurant results.
+- [x] Optional: Implement map view of restaurant results.
+- [x] Optional: Implement the restaurant detail page.
+- [x] Optional: Add app icon
+- [x] Optional: User can pull to refresh the table list.
